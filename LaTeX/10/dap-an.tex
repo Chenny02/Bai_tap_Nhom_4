@@ -1,0 +1,91 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2017 -- phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+\begin{enumerate}[label=\alph*)]
+  \item Với $x=9$, ta có
+  \[
+  A=\frac{\sqrt{9}+2}{\sqrt{9}-5}=\frac{5}{-2}=-\frac{5}{2}.
+  \]
+  \item Với $x\ge0$, $x\ne25$, ta có
+  \begin{align*}
+  B&=\frac{3}{\sqrt{x}+5}+\frac{20-2\sqrt{x}}{x-25}\\
+   &=\frac{3(\sqrt{x}-5)+20-2\sqrt{x}}{(\sqrt{x}-5)(\sqrt{x}+5)}\\
+   &=\frac{\sqrt{x}+5}{(\sqrt{x}-5)(\sqrt{x}+5)}\\
+   &=\frac{1}{\sqrt{x}-5}.
+  \end{align*}
+  \item Từ kết quả trên,
+  \[
+  A=B|x-4|\Longleftrightarrow \sqrt{x}+2=|x-4|.
+  \]
+  Nếu $x\ge4$, phương trình trở thành
+  \[
+  \sqrt{x}+2=x-4\Longleftrightarrow x-\sqrt{x}-6=0
+  \Longleftrightarrow (\sqrt{x}-3)(\sqrt{x}+2)=0,
+  \]
+  nên $x=9$.
+  Nếu $0\le x<4$, ta có
+  \[
+  \sqrt{x}+2=4-x\Longleftrightarrow x+\sqrt{x}-2=0
+  \Longleftrightarrow (\sqrt{x}-1)(\sqrt{x}+2)=0,
+  \]
+  nên $x=1$. Cả hai giá trị đều thỏa điều kiện. Vậy $x\in\{1,9\}$.
+\end{enumerate}
+
+\textbf{Câu 2.} Gọi vận tốc xe máy là $x$ km/h ($x>0$). Khi đó vận tốc ô tô là $x+10$ km/h. Thời gian đi của xe máy và ô tô lần lượt là $\dfrac{120}{x}$ giờ và $\dfrac{120}{x+10}$ giờ. Vì ô tô đến sớm hơn $36$ phút $=\dfrac35$ giờ, ta có
+\begin{align*}
+\frac{120}{x}-\frac{120}{x+10}&=\frac35\\
+600(x+10)-600x&=3x(x+10)\\
+x^2+10x-2000&=0\\
+(x+50)(x-40)&=0.
+\end{align*}
+Vì $x>0$, suy ra $x=40$. Vận tốc xe máy là $40$ km/h và vận tốc ô tô là $50$ km/h.
+
+\textbf{Câu 3.}
+\begin{enumerate}[label=\alph*)]
+  \item Điều kiện: $x\ge0$, $y\ge1$. Đặt $u=\sqrt{x}$, $v=\sqrt{y-1}$, khi đó $u,v\ge0$ và hệ trở thành
+  \[
+  \begin{cases}u+2v=5,\\4u-v=2.\end{cases}
+  \]
+  Từ phương trình đầu, $u=5-2v$. Thế vào phương trình thứ hai được $20-9v=2$, do đó $v=2$ và $u=1$. Suy ra $x=1$, $y=5$. Nghiệm của hệ là $(1;5)$.
+  \item
+  \begin{enumerate}[label=(\alph*)]
+    \item Thay $x=0$, $y=5$ vào $y=mx+5$ được đẳng thức đúng với mọi $m$. Vậy $(d)$ luôn đi qua $A(0;5)$.
+    \item Hoành độ giao điểm thỏa mãn
+    \[
+    x^2-mx-5=0.
+    \]
+    Tích hai nghiệm bằng $-5<0$, nên phương trình luôn có hai nghiệm phân biệt. Theo Vi-ét, $x_1+x_2=m$. Vì $x_1<x_2$ và $|x_1|>|x_2|$, ta có $x_1^2>x_2^2$, hay $(x_1+x_2)(x_1-x_2)>0$. Mà $x_1-x_2<0$, nên $x_1+x_2<0$, tức là $m<0$. Ngược lại, với $m<0$ các quan hệ trên cũng cho $|x_1|>|x_2|$. Vậy $m<0$.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Câu 5.} Từ $a,b,c\ge1$ suy ra
+\[
+a^2+b^2\ge2ab,\qquad b^2+c^2\ge2bc,\qquad c^2+a^2\ge2ca.
+\]
+Cộng các bất đẳng thức và dùng $ab+bc+ca=9$, được $P\ge9$. Dấu bằng đạt được khi $a=b=c=\sqrt{3}$, thỏa các điều kiện. Do đó $\min P=9$.
+
+Mặt khác, $(a-1)(b-1)\ge0$ cho $a+b\le ab+1$. Tương tự, cộng các bất đẳng thức
+\[
+a+b\le ab+1,\qquad b+c\le bc+1,\qquad c+a\le ca+1
+\]
+được
+\[
+2(a+b+c)\le ab+bc+ca+3=12,
+\]
+nên $a+b+c\le6$. Vì
+\[
+P=(a+b+c)^2-2(ab+bc+ca)=(a+b+c)^2-18,
+\]
+ta được $P\le18$. Dấu bằng đạt được tại $(a,b,c)=(4,1,1)$ và các hoán vị, đều thỏa điều kiện. Vậy $\max P=18$.
+\end{document}

@@ -1,0 +1,94 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0.45em,topsep=0.3em}
+\begin{document}
+\begin{center}{\Large\bfseries ĐÁP ÁN VÀ LỜI GIẢI}\par Đề toán vào lớp 10 Hà Nội, năm học 2023--2024\par\smallskip{\itshape Phần Đại số, toán thực tế và đo lường}\end{center}
+
+\section*{Câu I}
+\begin{enumerate}
+\item Thay $x=9$ vào $A$:
+\[
+A=\frac{9+2}{\sqrt9}=\frac{11}{3}.
+\]
+\item Vì $x>0$, $x\ne1$, ta có
+\begin{align*}
+B&=\frac{2\sqrt{x}-3}{\sqrt{x}-1}+\frac{3-\sqrt{x}}{(\sqrt{x}-1)(\sqrt{x}+1)}\\
+&=\frac{(2\sqrt{x}-3)(\sqrt{x}+1)+3-\sqrt{x}}{(\sqrt{x}-1)(\sqrt{x}+1)}\\
+&=\frac{2x-2\sqrt{x}}{(\sqrt{x}-1)(\sqrt{x}+1)}
+=\frac{2\sqrt{x}(\sqrt{x}-1)}{(\sqrt{x}-1)(\sqrt{x}+1)}
+=\frac{2\sqrt{x}}{\sqrt{x}+1}.
+\end{align*}
+\item Dùng kết quả trên,
+\[
+A\cdot B=\frac{x+2}{\sqrt{x}}\cdot\frac{2\sqrt{x}}{\sqrt{x}+1}=\frac{2x+4}{\sqrt{x}+1}.
+\]
+Điều kiện $A\cdot B=4$ tương đương
+\[
+2x+4=4\sqrt{x}+4\iff 2\sqrt{x}(\sqrt{x}-2)=0.
+\]
+Vì $x>0$, suy ra $\sqrt{x}=2$, tức $x=4$ (thỏa điều kiện xác định).
+\end{enumerate}
+
+\section*{Câu II}
+\begin{enumerate}
+\item Gọi $x$ là số sản phẩm theo kế hoạch phân xưởng làm trong một ngày, $x>0$. Theo kế hoạch cần $900/x$ ngày; thực tế mỗi ngày làm $x+15$ sản phẩm và cần $900/(x+15)$ ngày. Thực tế hoàn thành sớm ba ngày nên
+\[
+\frac{900}{x}-\frac{900}{x+15}=3
+\iff x^2+15x-4500=0.
+\]
+Phương trình có $\Delta=15^2+4\cdot4500=18225=135^2$, nên $x=60$ hoặc $x=-75$. Do $x>0$, nhận $x=60$. Vậy theo kế hoạch mỗi ngày làm 60 sản phẩm.
+\item Thể tích hình trụ:
+\[
+V=\pi r^2h\approx3{,}14\cdot30^2\cdot120=339\,120\ \mathrm{cm}^3.
+\]
+\end{enumerate}
+
+\section*{Câu III}
+\begin{enumerate}
+\item Điều kiện $x\ne3$. Nhân phương trình thứ nhất với 3 và phương trình thứ hai với 2:
+\[
+\begin{cases}
+\dfrac6{x-3}-9y=3,\\[3pt]
+\dfrac6{x-3}+4y=16.
+\end{cases}
+\]
+Trừ hai phương trình được $13y=13$, do đó $y=1$. Thay vào phương trình đầu: $2/(x-3)-3=1$, suy ra $x-3=1/2$, tức $x=7/2$. Vậy nghiệm là $(x,y)=(7/2,1)$, thỏa điều kiện.
+\item Hoành độ giao điểm là nghiệm của
+\[
+x^2-(m+2)x+m=0.
+\]
+\begin{enumerate}[label=\alph*)]
+\item Biệt thức $\Delta=(m+2)^2-4m=m^2+4>0$ với mọi $m$, nên phương trình có hai nghiệm phân biệt. Do đó $(d)$ luôn cắt $(P)$ tại hai điểm phân biệt.
+\item Theo Vi-ét, $x_1+x_2=m+2$ và $x_1x_2=m$. Điều kiện đề bài đòi hỏi các mẫu khác 0, đặc biệt $m\ne0$, và $x_1+x_2-2=m\ne0$. Khi đó
+\[
+\frac1{x_1}+\frac1{x_2}=\frac{x_1+x_2}{x_1x_2}
+=\frac{m+2}{m},\qquad
+\frac1{x_1+x_2-2}=\frac1m.
+\]
+Suy ra $(m+2)/m=1/m$, nên $m+2=1$, tức $m=-1$. Giá trị này thỏa các điều kiện mẫu số; vậy $m=-1$.
+\end{enumerate}
+\end{enumerate}
+
+\section*{Câu V}
+Vì $a,b>0$, các mẫu đều dương. Quy đồng, bất đẳng thức cần chứng minh tương đương
+\[
+\frac{a^2(b^2+a)+b^2(a^2+b)}{(a^2+b)(b^2+a)}\le1.
+\]
+Lấy mẫu số trừ tử số:
+\begin{align*}
+(a^2+b)(b^2+a)-\bigl(a^2(b^2+a)+b^2(a^2+b)\bigr)
+&=ab-a^2b^2\\
+&=ab(1-ab).
+\end{align*}
+Từ $a+b\le2$ và $(a-b)^2\ge0$ suy ra $ab\le(a+b)^2/4\le1$. Vì $ab>0$, ta có $ab(1-ab)\ge0$. Do đó hiệu giữa mẫu số và tử số không âm, chứng minh được bất đẳng thức.
+\[
+1-\left(\frac{a^2}{a^2+b}+\frac{b^2}{b^2+a}\right)
+=\frac{ab(1-ab)}{(a^2+b)(b^2+a)}.
+\]
+\end{document}

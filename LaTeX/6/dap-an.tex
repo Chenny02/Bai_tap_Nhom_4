@@ -1,0 +1,129 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\begin{document}
+
+\begin{center}
+{\large\bfseries SỞ GIÁO DỤC VÀ ĐÀO TẠO HÀ NỘI}\par
+{\Large\bfseries KỲ THI TUYỂN SINH LỚP 10 THPT}\par
+{\large NĂM HỌC 2021--2022}\par
+{\bfseries ĐÁP ÁN VÀ HƯỚNG DẪN GIẢI PHẦN TRÍCH}\par
+Môn thi: Toán \qquad Ngày thi: 13/6/2021
+\end{center}
+
+\textit{Điểm dưới đây là điểm từng câu trong đề gốc. Phần trích không gồm Bài IV hình học, nên tổng điểm của các câu được trình bày là 7,0 điểm trên thang điểm gốc.}
+
+\textbf{Bài I (2,0 điểm)}
+
+\begin{enumerate}[label=\arabic*)]
+  \item Thay $x=16$ vào biểu thức $A$:
+  \[
+  A=\frac{\sqrt{16}}{\sqrt{16}+3}=\frac{4}{7}.
+  \]
+  Vậy $A=\dfrac47$. \hfill (1,0 điểm)
+
+  \item Do $x\geq0$ và $x\neq9$, các mẫu số trong phép biến đổi đều khác $0$. Quy đồng:
+  \begin{align*}
+  A+B
+  &=\frac{\sqrt{x}}{\sqrt{x}+3}
+    +\frac{2\sqrt{x}}{\sqrt{x}-3}
+    -\frac{3x+9}{x-9}\\
+  &=\frac{x-3\sqrt{x}+2x+6\sqrt{x}-3x-9}
+          {(\sqrt{x}+3)(\sqrt{x}-3)}\\
+  &=\frac{3\sqrt{x}-9}{(\sqrt{x}+3)(\sqrt{x}-3)}
+   =\frac{3(\sqrt{x}-3)}{(\sqrt{x}+3)(\sqrt{x}-3)}
+   =\frac{3}{\sqrt{x}+3}.
+  \end{align*}
+  Đẳng thức được chứng minh. \hfill (1,0 điểm)
+\end{enumerate}
+
+\textbf{Bài II (2,5 điểm)}
+
+\begin{enumerate}[label=\arabic*)]
+  \item Gọi $x$ là số bộ đồ bảo hộ y tế tổ phải làm mỗi ngày theo kế hoạch, $x>0$. Khi đó, số bộ thực tế làm mỗi ngày là $x+100$. Thời gian làm theo kế hoạch là $\dfrac{4800}{x}$ ngày; thời gian làm thực tế là $\dfrac{4800}{x+100}$ ngày. Vì tổ hoàn thành sớm 8 ngày nên
+  \[
+  \frac{4800}{x}-\frac{4800}{x+100}=8.
+  \]
+  Với $x>0$, nhân hai vế với $x(x+100)$ và rút gọn được
+  \[
+  x^2+100x-60000=0
+  \quad\Longleftrightarrow\quad
+  (x-200)(x+300)=0.
+  \]
+  Suy ra $x=200$ hoặc $x=-300$. Điều kiện $x>0$ loại nghiệm $-300$, còn $x=200$ thỏa mãn.\par
+  Vậy theo kế hoạch, mỗi ngày tổ phải làm 200 bộ đồ bảo hộ y tế. \hfill (1,5 điểm)
+
+  \item Chỉ sơn mặt xung quanh hình trụ, nên diện tích cần tính là diện tích xung quanh:
+  \[
+  S_{\mathrm{xq}}=2\pi rh
+  \approx 2\cdot3{,}14\cdot0{,}5\cdot1{,}6
+  =5{,}024\ (\mathrm{m}^2).
+  \]
+  Vậy diện tích bề mặt được sơn xấp xỉ $5{,}024\,\mathrm{m}^2$. \hfill (1,0 điểm)
+\end{enumerate}
+
+\textbf{Bài III (2,0 điểm)}
+
+\begin{enumerate}[label=\arabic*)]
+  \item Điều kiện xác định: $x\neq-1$. Đặt $t=\dfrac{1}{x+1}$, hệ trở thành
+  \[
+  \begin{cases}
+  3t-2y=-1,\\
+  5t+3y=11.
+  \end{cases}
+  \]
+  Nhân phương trình thứ nhất với $3$, phương trình thứ hai với $2$, rồi cộng hai phương trình, ta được $19t=19$, suy ra $t=1$. Thay vào phương trình đầu: $3-2y=-1$, nên $y=2$. Từ $\dfrac1{x+1}=1$ suy ra $x=0$, thỏa điều kiện.\par
+  Vậy nghiệm của hệ là $(x;y)=(0;2)$. \hfill (1,0 điểm)
+
+  \item Hoành độ giao điểm thỏa mãn
+  \[
+  x^2=2x+m-2
+  \quad\Longleftrightarrow\quad
+  x^2-2x-m+2=0. \tag{1}
+  \]
+  Phương trình (1) có hai nghiệm phân biệt khi và chỉ khi
+  \[
+  \Delta'=1-(2-m)=m-1>0,
+  \]
+  tức là $m>1$. Theo định lý Viète,
+  \[
+  x_1+x_2=2,\qquad x_1x_2=2-m.
+  \]
+  Điều kiện $|x_1-x_2|=2$ tương đương với
+  \[
+  (x_1-x_2)^2=4
+  \quad\Longleftrightarrow\quad
+  (x_1+x_2)^2-4x_1x_2=4.
+  \]
+  Thay tổng và tích vào, ta được
+  \[
+  4-4(2-m)=4
+  \quad\Longleftrightarrow\quad m=2.
+  \]
+  Giá trị này thỏa $m>1$. Vậy $m=2$. \hfill (1,0 điểm)
+\end{enumerate}
+
+\textbf{Bài V (0,5 điểm)}
+
+Đặt $t=a+b$. Từ $a^2+b^2=2$ suy ra
+\[
+ab=\frac{(a+b)^2-(a^2+b^2)}{2}=\frac{t^2}{2}-1.
+\]
+Do đó
+\[
+P=3t+ab=\frac12t^2+3t-1
+ =\frac12(t+3)^2-\frac{11}{2}.
+\]
+Mặt khác, $(a+b)^2\leq2(a^2+b^2)=4$, nên $-2\leq t\leq2$. Vì thế $1\leq t+3\leq5$, suy ra $(t+3)^2\geq1$ và
+\[
+P\geq\frac12-\frac{11}{2}=-5.
+\]
+Dấu bằng xảy ra khi $t=-2$; kết hợp với $a^2+b^2=2$ cho $a=b=-1$. Vậy giá trị nhỏ nhất của $P$ là $-5$. \hfill (0,5 điểm)
+
+\end{document}

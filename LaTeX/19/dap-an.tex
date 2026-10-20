@@ -1,0 +1,116 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+\begin{center}
+  {\Large\bfseries ĐÁP ÁN ĐỀ THI TUYỂN SINH VÀO LỚP 10 THPT}\\
+  {\bfseries Thành phố Hà Nội, năm học 2008--2009}\\
+  {\itshape Phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+
+Điều kiện xác định: $x>0$.
+
+\begin{enumerate}[label=\alph*)]
+  \item Ta có
+  \begin{align*}
+  P&=\left(\frac{1}{\sqrt{x}}+\frac{\sqrt{x}}{\sqrt{x}+1}\right)
+  \cdot\frac{x+\sqrt{x}}{\sqrt{x}}\\
+  &=\frac{x+\sqrt{x}+1}{\sqrt{x}(\sqrt{x}+1)}
+  \cdot\frac{\sqrt{x}(\sqrt{x}+1)}{\sqrt{x}}\\
+  &=\frac{x+\sqrt{x}+1}{\sqrt{x}}.
+  \end{align*}
+
+  \item Với $x=4$,
+  \[
+  P=\frac{4+2+1}{2}=\frac{7}{2}.
+  \]
+
+  \item Ta có
+  \begin{align*}
+  \frac{x+\sqrt{x}+1}{\sqrt{x}}&=\frac{13}{3}\\
+  3x-10\sqrt{x}+3&=0\\
+  (\sqrt{x}-3)(3\sqrt{x}-1)&=0.
+  \end{align*}
+  Do đó $x=9$ hoặc $x=\dfrac{1}{9}$; cả hai giá trị đều thỏa mãn điều kiện.
+\end{enumerate}
+
+\textbf{Câu 2.}
+
+Gọi $x,y$ lần lượt là số chi tiết máy tổ I và tổ II sản xuất trong tháng thứ nhất ($x,y>0$). Khi đó
+\[
+\begin{cases}
+x+y=900,\\
+1{,}15x+1{,}10y=1010.
+\end{cases}
+\]
+Tương đương
+\[
+\begin{cases}
+x+y=900,\\
+23x+22y=20200.
+\end{cases}
+\]
+Giải hệ được $x=400$, $y=500$.
+
+Vậy trong tháng thứ nhất, tổ I sản xuất 400 chi tiết máy và tổ II sản xuất 500 chi tiết máy.
+
+\textbf{Câu 3.}
+
+Hoành độ giao điểm của $(P)$ và $(d)$ thỏa mãn
+\[
+\frac{x^2}{4}=mx+1
+\quad\Longleftrightarrow\quad
+x^2-4mx-4=0. \tag{1}
+\]
+
+\begin{enumerate}[label=\alph*)]
+  \item Phương trình (1) có
+  \[
+  \Delta'=4m^2+4>0
+  \]
+  với mọi $m$. Vì vậy $(d)$ luôn cắt $(P)$ tại hai điểm phân biệt $A,B$.
+
+  \item Gọi $x_1,x_2$ là hai nghiệm của (1). Khi đó
+  \[
+  x_1+x_2=4m,\qquad x_1x_2=-4.
+  \]
+  Với $A\left(x_1,\dfrac{x_1^2}{4}\right)$ và
+  $B\left(x_2,\dfrac{x_2^2}{4}\right)$, ta có
+  \begin{align*}
+  S_{AOB}
+  &=\frac12\left|x_1\frac{x_2^2}{4}-x_2\frac{x_1^2}{4}\right|\\
+  &=\frac18\left|x_1x_2(x_2-x_1)\right|.
+  \end{align*}
+  Mặt khác,
+  \[
+  |x_2-x_1|
+  =\sqrt{(x_1+x_2)^2-4x_1x_2}
+  =4\sqrt{m^2+1}.
+  \]
+  Suy ra
+  \[
+  \boxed{S_{AOB}=2\sqrt{m^2+1}}.
+  \]
+\end{enumerate}
+
+\textbf{Câu 5.}
+
+Đặt $a=x-2$. Khi đó $x-1=a+1$ và $x-3=a-1$. Ta có
+\begin{align*}
+Q&=(a+1)^4+(a-1)^4+6(a+1)^2(a-1)^2\\
+ &=8a^4+8\ge 8.
+\end{align*}
+Dấu bằng xảy ra khi $a=0$, tức là $x=2$.
+
+Vậy giá trị nhỏ nhất của $Q$ là $\boxed{8}$.
+
+\end{document}

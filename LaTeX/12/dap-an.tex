@@ -1,0 +1,64 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}{\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2015\\Phần Đại số}\end{center}
+\textbf{Câu 33.}
+\begin{enumerate}[label=\alph*)]
+\item Thay $x=9$:
+\[
+P=\frac{9+3}{\sqrt9-2}=\frac{12}{3-2}=12.
+\]
+\item Với $x>0$, $x\ne4$:
+\begin{align*}
+Q&=\frac{\sqrt{x}-1}{\sqrt{x}+2}+\frac{5\sqrt{x}-2}{x-4}\\
+&=\frac{(\sqrt{x}-1)(\sqrt{x}-2)+5\sqrt{x}-2}{x-4}\\
+&=\frac{x+2\sqrt{x}}{(\sqrt{x}-2)(\sqrt{x}+2)}
+=\frac{\sqrt{x}}{\sqrt{x}-2}.
+\end{align*}
+\item Từ câu b),
+\[
+\frac{P}{Q}=\frac{x+3}{\sqrt{x}}=\sqrt{x}+\frac{3}{\sqrt{x}}\ge2\sqrt3,
+\]
+do bất đẳng thức AM--GM. Dấu bằng xảy ra khi $\sqrt{x}=3/\sqrt{x}$, tức $x=3$ (thỏa điều kiện). Vậy giá trị nhỏ nhất là $2\sqrt3$, đạt tại $x=3$.
+\end{enumerate}
+
+\textbf{Câu 34.} Gọi $x$ (km/giờ) là vận tốc tàu khi nước yên lặng; $x>2$. Thời gian ngược dòng và xuôi dòng lần lượt là $60/(x-2)$ và $48/(x+2)$ giờ. Theo đề bài,
+\[
+\frac{60}{x-2}-\frac{48}{x+2}=1
+\iff x^2-12x-220=0
+\iff x=22\text{ hoặc }x=-10.
+\]
+Do $x>2$, nhận $x=22$. Vận tốc cần tìm là $22$ km/giờ.
+
+\textbf{Câu 35.} Điều kiện $x\ge-1$. Đặt $a=x+y$, $b=\sqrt{x+1}\ (b\ge0)$. Hệ trở thành
+\[
+\begin{cases}2a+b=4,\\a-3b=-5,\end{cases}
+\quad\Rightarrow\quad a=1,\ b=2.
+\]
+Suy ra $x+1=4$, nên $x=3$, và $x+y=1$ cho $y=-2$. Nghiệm của hệ là $(3;-2)$.
+
+\textbf{Câu 36.}
+\begin{enumerate}[label=\alph*)]
+\item $\Delta=(m+5)^2-4(3m+6)=(m-1)^2\ge0$ với mọi $m\in\mathbb R$. Vậy phương trình luôn có nghiệm thực.
+\item Phân tích đa thức:
+\[
+x^2-(m+5)x+3m+6=(x-3)(x-m-2),
+\]
+nên hai nghiệm là $3$ và $m+2$. Vì là độ dài hai cạnh góc vuông, cần $m+2>0$ và
+\[
+3^2+(m+2)^2=5^2.
+\]
+Suy ra $m+2=4$ (do dương), vậy $m=2$.
+\end{enumerate}
+
+\textbf{Câu 38.} Từ $a^2+b^2=4$,
+\[
+2ab=(a+b)^2-4,\qquad 2M=\frac{(a+b)^2-4}{a+b+2}=a+b-2.
+\]
+Mặt khác $a+b\le\sqrt{2(a^2+b^2)}=2\sqrt2$. Do đó $M\le\sqrt2-1$. Dấu bằng khi $a=b=\sqrt2$, thỏa điều kiện. Vậy $\max M=\sqrt2-1$.
+\end{document}

@@ -1,0 +1,125 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Đáp án tuyển sinh vào lớp 10 Hà Nội năm 2019--2020 -- phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+\begin{enumerate}[label=\alph*)]
+  \item Với $x=9$, ta có
+  \[
+  A=\frac{4(\sqrt{9}+1)}{25-9}=1.
+  \]
+  \item Với $x\ge0$, $x\ne25$, ta có
+  \begin{align*}
+  B&=\left(\frac{15-\sqrt{x}}{x-25}+\frac{2}{\sqrt{x}+5}\right):\frac{\sqrt{x}+1}{\sqrt{x}-5}\\
+   &=\left(\frac{15-\sqrt{x}}{(\sqrt{x}+5)(\sqrt{x}-5)}
+      +\frac{2(\sqrt{x}-5)}{(\sqrt{x}+5)(\sqrt{x}-5)}\right):\frac{\sqrt{x}+1}{\sqrt{x}-5}\\
+   &=\frac{15-\sqrt{x}+2\sqrt{x}-10}{(\sqrt{x}+5)(\sqrt{x}-5)}
+      :\frac{\sqrt{x}+1}{\sqrt{x}-5}\\
+   &=\frac{\sqrt{x}+5}{(\sqrt{x}+5)(\sqrt{x}-5)}
+      :\frac{\sqrt{x}+1}{\sqrt{x}-5}\\
+   &=\frac{1}{\sqrt{x}+1}.
+  \end{align*}
+  \item Từ câu 2,
+  \[
+  P=A\cdot B=\frac{4(\sqrt{x}+1)}{25-x}\cdot\frac{1}{\sqrt{x}+1}
+   =\frac{4}{25-x}.
+  \]
+  Để $P$ là số nguyên, đặt $d=25-x$. Khi đó $d$ là ước nguyên khác $0$ của $4$, nên
+  \[
+  d\in\{-4,-2,-1,1,2,4\}.
+  \]
+  Các giá trị tương ứng của $x=25-d$ đều thỏa điều kiện đề bài:
+  \begin{center}
+  \begin{tabular}{c|rrrrrr}
+  $25-x$ & $-4$ & $-2$ & $-1$ & $1$ & $2$ & $4$\\ \hline
+  $x$ & $29$ & $27$ & $26$ & $24$ & $23$ & $21$\\
+  $P$ & $-1$ & $-2$ & $-4$ & $4$ & $2$ & $1$
+  \end{tabular}
+  \end{center}
+  Giá trị nguyên lớn nhất của $P$ là $4$, đạt được khi $x=24$.
+\end{enumerate}
+
+\textbf{Câu 2.}
+\begin{enumerate}[label=\alph*)]
+  \item Gọi thời gian để đội thứ nhất và đội thứ hai làm riêng hoàn thành công việc lần lượt là $x$ và $y$ ngày. Vì hai đội cùng làm xong trong $15$ ngày nên $x,y>15$. Năng suất một ngày của hai đội lần lượt là $\dfrac1x$ và $\dfrac1y$. Từ dữ kiện thứ nhất và thứ hai, ta có hệ
+  \[
+  \begin{cases}
+  \dfrac1x+\dfrac1y=\dfrac1{15},\\[4pt]
+  \dfrac3x+\dfrac5y=\dfrac14.
+  \end{cases}
+  \]
+  Đặt $u=\dfrac1x$, $v=\dfrac1y$. Hệ trở thành
+  \[
+  \begin{cases}
+  u+v=\dfrac1{15},\\[4pt]
+  3u+5v=\dfrac14,
+  \end{cases}
+  \quad\Longrightarrow\quad u=\frac1{24},\quad v=\frac1{40}.
+  \]
+  Vậy đội thứ nhất làm riêng hết $24$ ngày, đội thứ hai làm riêng hết $40$ ngày.
+  \item Thể tích bồn nước là
+  \[
+  V=S_{\text{đáy}}h=0{,}32\cdot1{,}75=0{,}56\text{ m}^3.
+  \]
+\end{enumerate}
+
+\textbf{Câu 3.}
+\begin{enumerate}[label=\arabic*)]
+  \item Đặt $t=x^2$ với $t\ge0$. Phương trình trở thành
+  \[
+  t^2-7t-18=0\Longleftrightarrow (t-9)(t+2)=0.
+  \]
+  Vì $t\ge0$, ta nhận $t=9$, do đó $x^2=9$ và $x=\pm3$. Vậy phương trình có nghiệm $x=\pm3$.
+  \item Phương trình hoành độ giao điểm của $(d)$ và $(P)$ là
+  \[
+  x^2-2mx+m^2-1=0.
+  \]
+  \begin{enumerate}[label=\alph*)]
+    \item Biệt thức thu gọn là
+    \[
+    \Delta'=m^2-(m^2-1)=1>0.
+    \]
+    Vì hệ số của $x^2$ khác $0$, phương trình luôn có hai nghiệm phân biệt với mọi $m$. Vậy $(d)$ luôn cắt $(P)$ tại hai điểm phân biệt.
+    \item Theo Vi-ét, hai hoành độ giao điểm là $x_1=m-1$, $x_2=m+1$. Do biểu thức đề bài có mẫu $x_1x_2$, cần có
+    \[
+    x_1x_2=m^2-1\ne0,\quad\text{tức là }m\ne\pm1.
+    \]
+    Nhân hai vế điều kiện đề bài với $x_1x_2$, ta được
+    \[
+    x_1+x_2=-2+x_1x_2.
+    \]
+    Thay $x_1=m-1$, $x_2=m+1$ vào:
+    \[
+    2m=-2+(m-1)(m+1)
+    \Longleftrightarrow m^2-2m-3=0
+    \Longleftrightarrow (m-3)(m+1)=0.
+    \]
+    Các nghiệm là $m=3$ hoặc $m=-1$; điều kiện $m\ne\pm1$ loại $m=-1$. Vậy $m=3$.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Câu 5.} Đặt $t=ab$. Từ điều kiện $a^2+b^2+ab=3$ suy ra $a^2+b^2=3-t$. Các bất đẳng thức $(a+b)^2\ge0$ và $(a-b)^2\ge0$ cho
+\[
+3-t\ge-2t\quad\text{và}\quad 3-t\ge2t,
+\]
+nên $-3\le t\le1$. Ta có
+\begin{align*}
+P&=a^4+b^4-ab\\
+ &=(a^2+b^2)^2-2a^2b^2-ab\\
+ &=(3-t)^2-2t^2-t=9-7t-t^2.
+\end{align*}
+Với $-3\le t\le1$, hàm $9-7t-t^2$ giảm vì đạo hàm $-7-2t\le-1<0$. Do đó giá trị lớn nhất đạt tại $t=-3$ và giá trị nhỏ nhất đạt tại $t=1$:
+\[
+P(-3)=21,\qquad P(1)=1.
+\]
+Khi $t=-3$, điều kiện cho $a^2+b^2=6$ và $(a+b)^2=0$, nên $(a,b)=(\sqrt3,-\sqrt3)$ hoặc $(-\sqrt3,\sqrt3)$. Khi $t=1$, ta có $a^2+b^2=2$ và $(a-b)^2=0$, nên $(a,b)=(1,1)$ hoặc $(-1,-1)$. Vậy $\max P=21$ và $\min P=1$.
+\end{document}

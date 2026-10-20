@@ -1,0 +1,71 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}{\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2014\\Phần Đại số}\end{center}
+\textbf{Câu 26.} Thay $x=9$:
+\[
+A=\frac{\sqrt9+1}{\sqrt9-1}=\frac{3+1}{3-1}=2.
+\]
+
+\textbf{Câu 27.}
+\begin{enumerate}[label=\alph*)]
+\item Với $x>0$, $x\ne1$,
+\begin{align*}
+P&=\left(\frac{x-2}{\sqrt{x}(\sqrt{x}+2)}+\frac{1}{\sqrt{x}+2}\right)\cdot\frac{\sqrt{x}+1}{\sqrt{x}-1}\\
+&=\frac{x-2+\sqrt{x}}{\sqrt{x}(\sqrt{x}+2)}\cdot\frac{\sqrt{x}+1}{\sqrt{x}-1}\\
+&=\frac{(\sqrt{x}-1)(\sqrt{x}+2)}{\sqrt{x}(\sqrt{x}+2)}\cdot\frac{\sqrt{x}+1}{\sqrt{x}-1}
+=\frac{\sqrt{x}+1}{\sqrt{x}}.
+\end{align*}
+\item Put $t=\sqrt{x}>0$ (and $t\ne1$). Then
+\[
+2\frac{t+1}{t}=2t+5
+\iff 2t+2=2t^2+5t
+\iff 2t^2+3t-2=0.
+\]
+Thus $t=\frac12$ or $t=-2$. Since $t>0$, $t=\frac12$, hence $x=\frac14$.
+\end{enumerate}
+
+\textbf{Câu 28.} Gọi $x$ là số sản phẩm mỗi ngày theo kế hoạch, với $x\in\mathbb N$ và $0<x<1100$. Số ngày theo kế hoạch là $1100/x$, còn khi tăng sản lượng mỗi ngày thêm $5$ thì số ngày là $1100/(x+5)$. Vì hoàn thành sớm $2$ ngày:
+\[
+\frac{1100}{x+5}+2=\frac{1100}{x}
+\iff x^2+5x-2750=0
+\iff x=50\ \text{hoặc}\ x=-55.
+\]
+Loại $x=-55$ vì không phù hợp ý nghĩa; vậy mỗi ngày theo kế hoạch sản xuất $50$ sản phẩm.
+
+\textbf{Câu 29.} Điều kiện $x+y\ne0$, $y\ne1$. Đặt $X=1/(x+y)$ và $Y=1/(y-1)$. Khi đó
+\[
+\begin{cases}4X+Y=5,\\X-2Y=-1\end{cases}
+\quad\Rightarrow\quad X=1,\ Y=1.
+\]
+Suy ra $x+y=1$ và $y-1=1$, nên $y=2$, $x=-1$. Nghiệm là $(-1;2)$.
+
+\textbf{Câu 30.}
+\begin{enumerate}[label=\alph*)]
+\item Hoành độ giao điểm thỏa mãn $x^2=-x+6$, tức $(x+3)(x-2)=0$. Với $x=2$ thì $y=4$; với $x=-3$ thì $y=9$. Do đó hai giao điểm là $A(2;4)$ và $B(-3;9)$.
+\item Diện tích tam giác với hai vectơ $\overrightarrow{OA}=(2,4)$, $\overrightarrow{OB}=(-3,9)$:
+\[
+S_{OAB}=\frac12\left|2\cdot9-4\cdot(-3)\right|=15.
+\]
+\end{enumerate}
+
+\textbf{Câu 32.} Do $a+b+c=2$,
+\[
+2a+bc=a(a+b+c)+bc=(a+b)(a+c).
+\]
+Theo bất đẳng thức AM--GM,
+\[
+\sqrt{2a+bc}=\sqrt{(a+b)(a+c)}\le\frac{(a+b)+(a+c)}2.
+\]
+Tương tự cho hai căn còn lại. Cộng ba bất đẳng thức được
+\[
+Q\le\frac{(a+b+a+c)+(b+c+b+a)+(c+a+c+b)}2
+=2(a+b+c)=4.
+\]
+Dấu bằng xảy ra khi $a=b=c=2/3$, thỏa mãn điều kiện. Vậy $\max Q=4$.
+\end{document}

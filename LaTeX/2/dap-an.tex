@@ -1,0 +1,116 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=*,itemsep=0.6em}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries ĐÁP ÁN VÀ LỜI GIẢI -- ĐỀ 2 (2025)}\\[2pt]
+{\large\bfseries PHẦN ĐẠI SỐ VÀ TOÁN ỨNG DỤNG}
+\end{center}
+
+\section*{Câu I. Thống kê và xác suất}
+\begin{enumerate}
+\item Nhóm $[12;16)$ có tần số là 75. Tần số tương đối của nhóm là
+\[
+\frac{75}{300}\cdot100\%=25\%.
+\]
+\item Không gian mẫu gồm 8 kết quả đồng khả năng: rút được thẻ mang một trong các số từ 1 đến 8. Các kết quả thuận lợi cho $A$ là rút được thẻ số 3 hoặc số 6, có 2 kết quả. Do đó
+\[
+P(A)=\frac{2}{8}=\frac14.
+\]
+\end{enumerate}
+
+\section*{Câu II. Biểu thức đại số}
+\begin{enumerate}
+\item Với $x=9$ thì $\sqrt{x}=3$, nên
+\[
+A=\frac{3+2}{3-2}=5.
+\]
+\item Đặt $t=\sqrt{x}>0$, với $t\ne2$. Quy đồng hai phân thức trong $B$:
+\begin{align*}
+B&=\frac{t^2+t-4}{t(t-2)}-\frac{t}{t(t-2)}\\
+&=\frac{t^2-4}{t(t-2)}
+=\frac{(t-2)(t+2)}{t(t-2)}
+=\frac{t+2}{t}
+=\frac{\sqrt{x}+2}{\sqrt{x}}.
+\end{align*}
+Các phép biến đổi hợp lệ do $x>0$ và $x\ne4$.
+\item Dùng kết quả trên,
+\[
+\frac AB=\frac{\frac{\sqrt{x}+2}{\sqrt{x}-2}}{\frac{\sqrt{x}+2}{\sqrt{x}}}=\frac{\sqrt{x}}{\sqrt{x}-2}.
+\]
+Do $\sqrt{x}+2>0$, bất đẳng thức tương đương
+\[
+\frac{\sqrt{x}}{\sqrt{x}-2}<\frac12
+\iff \frac{2\sqrt{x}-(\sqrt{x}-2)}{2(\sqrt{x}-2)}<0
+\iff \frac{\sqrt{x}+2}{2(\sqrt{x}-2)}<0.
+\]
+Suy ra $\sqrt{x}-2<0$, tức $x<4$. Kết hợp $x$ là số nguyên dương (và điều kiện xác định), các giá trị là $1,2,3$. Giá trị lớn nhất là $\boxed{3}$.
+\end{enumerate}
+
+\section*{Câu III. Bài toán thực tế và hệ thức Viète}
+\begin{enumerate}
+\item Gọi quãng đường Hà Nội--Hải Phòng là $d$ km ($d>0$). Thời gian đi là $d/60$ giờ, thời gian về là $d/40$ giờ. Theo đề bài,
+\[
+\frac d{40}-\frac d{60}=1\quad\Longrightarrow\quad \frac d{120}=1\quad\Longrightarrow\quad d=120.
+\]
+Vậy quãng đường dài $\boxed{120\text{ km}}$.
+\item Gọi giá niêm yết của ba lô và máy tính cầm tay lần lượt là $a,b$ nghìn đồng ($a,b>0$). Ta có
+\[
+\begin{cases}
+a+b=885,\\
+0{,}8a+0{,}75b=682.
+\end{cases}
+\]
+Từ phương trình đầu, $a=885-b$. Thay vào phương trình sau:
+\[
+0{,}8(885-b)+0{,}75b=682
+\Longrightarrow 708-0{,}05b=682
+\Longrightarrow b=520.
+\]
+Do đó $a=885-520=365$. Giá niêm yết lần lượt là $\boxed{365}$ nghìn đồng và $\boxed{520}$ nghìn đồng.
+\item Theo Viète,
+\[
+x_1+x_2=-8,\qquad x_1x_2=-6.
+\]
+Vì $x_2$ là nghiệm khác 0 nên nhân điều kiện đã cho với $x_2$ được
+\[
+70-mx_1^2=x_1x_2+mx_2^2
+\Longleftrightarrow m(x_1^2+x_2^2)+x_1x_2=70.
+\]
+Mà
+\[
+x_1^2+x_2^2=(x_1+x_2)^2-2x_1x_2=64+12=76.
+\]
+Vậy $76m-6=70$, suy ra $\boxed{m=1}$.
+\end{enumerate}
+
+\section*{Câu IV. Diện tích và thể tích}
+\begin{enumerate}
+\item Diện tích xung quanh hình trụ là
+\[
+S_{\text{xq}}=2\pi rh\approx2\cdot3{,}14\cdot50\cdot150=47\,100\text{ cm}^2.
+\]
+\item Phần nước đã dùng có chiều cao 40 cm, nên thể tích là
+\[
+V=\pi r^2h\approx3{,}14\cdot50^2\cdot40=314\,000\text{ cm}^3.
+\]
+\end{enumerate}
+
+\section*{Câu V. Bài toán tối ưu}
+Gọi $n$ là số xe được bổ sung; $n$ là số nguyên không âm. Khi đó lợi nhuận trung bình mỗi xe mỗi ngày là $1-0{,}02n$ triệu đồng, tổng số xe là $35+n$, và tổng lợi nhuận là
+\[
+M=(35+n)(1-0{,}02n)=-0{,}02n^2+0{,}3n+35.
+\]
+Hoàn thành bình phương:
+\[
+M=-0{,}02(n-7{,}5)^2+36{,}125.
+\]
+Với $n$ nguyên không âm, biểu thức đạt lớn nhất khi $n$ gần $7{,}5$ nhất, tức $n=7$ hoặc $n=8$. Hai phương án đều cho $M=36{,}12$ triệu đồng/ngày. Công ty nên bổ sung $\boxed{7\text{ hoặc }8\text{ xe}}$.
+\end{document}

@@ -1,0 +1,84 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0.45em,topsep=0.3em}
+\begin{document}
+\begin{center}{\Large\bfseries ĐÁP ÁN VÀ LỜI GIẢI}\par Đề toán vào lớp 10 Hà Nội, năm học 2022--2023\par\smallskip{\itshape Phần Đại số, toán thực tế và đo lường}\end{center}
+
+\section*{Bài I}
+\begin{enumerate}
+\item Thay $x=9$:
+\[
+A=\frac{3\sqrt9}{\sqrt9+2}=\frac95.
+\]
+\item Đặt $t=\sqrt{x}$, với $t\ge0$, $t\ne2$. Khi đó
+\begin{align*}
+B&=\frac{t^2+4}{(t-2)(t+2)}-\frac2{t-2}\\
+&=\frac{t^2+4-2(t+2)}{(t-2)(t+2)}
+=\frac{t(t-2)}{(t-2)(t+2)}
+=\frac{t}{t+2}=\frac{\sqrt{x}}{\sqrt{x}+2}.
+\end{align*}
+\item Từ hai biểu thức đã rút gọn,
+\[
+A-B=\frac{2\sqrt{x}}{\sqrt{x}+2}.
+\]
+Vì $\sqrt{x}+2>0$, bất đẳng thức cần xét tương đương
+\[
+\frac{2\sqrt{x}}{\sqrt{x}+2}<\frac32
+\iff 4\sqrt{x}<3\sqrt{x}+6
+\iff \sqrt{x}<6
+\iff x<36.
+\]
+Kết hợp $x$ nguyên dương và $x\ne4$, số nguyên dương lớn nhất thỏa mãn là $x=35$.
+\end{enumerate}
+
+\section*{Bài II}
+\begin{enumerate}
+\item Gọi vận tốc xe máy là $v\,\mathrm{km/h}$, $v>0$. Vận tốc ô tô là $v+20$. Thời gian xe máy đi hết quãng đường là $60/v$ giờ, còn thời gian ô tô là $60/(v+20)$ giờ. Ô tô đến sớm hơn nửa giờ, nên
+\[
+\frac{60}{v}-\frac{60}{v+20}=\frac12
+\iff v^2+20v-2400=0.
+\]
+Phân tích được $(v-40)(v+60)=0$. Do $v>0$, nhận $v=40$. Vậy xe máy chạy $40\,\mathrm{km/h}$ và ô tô chạy $60\,\mathrm{km/h}$.
+\item Diện tích mặt cầu bán kính $r=9{,}5\,\mathrm{cm}$ là
+\[
+S=4\pi r^2\approx4\cdot3{,}14\cdot(9{,}5)^2=1133{,}54\,\mathrm{cm}^2.
+\]
+\end{enumerate}
+
+\section*{Bài III}
+\begin{enumerate}
+\item Điều kiện $y\ne-2$. Nhân phương trình đầu với 3, phương trình sau với 2:
+\[
+\begin{cases}
+6x+\dfrac{36}{y+2}=15,\\[3pt]
+6x-\dfrac8{y+2}=4.
+\end{cases}
+\]
+Lấy phương trình trên trừ phương trình dưới được $44/(y+2)=11$, suy ra $y+2=4$, tức $y=2$. Thay vào phương trình đầu: $2x+3=5$, nên $x=1$. Nghiệm $(x,y)=(1,2)$ thỏa điều kiện.
+\item Hoành độ giao điểm thỏa
+\[
+x^2=2x+m^2\iff x^2-2x-m^2=0.
+\]
+\begin{enumerate}[label=\alph*)]
+\item Biệt thức thu gọn $\Delta'=1+m^2>0$ với mọi $m$. Vì thế phương trình luôn có hai nghiệm phân biệt, tức $(d)$ luôn cắt $(P)$ tại hai điểm phân biệt.
+\item Theo Vi-ét, $x_1+x_2=2$ và $x_1x_2=-m^2$. Điều kiện đề bài tương đương
+\[
+(x_1+1)(x_2+1)=x_1x_2+x_1+x_2+1=-m^2+3=-3.
+\]
+Suy ra $m^2=6$, do đó $m=\pm\sqrt6$. Cả hai giá trị đều cho hai giao điểm phân biệt theo phần a).
+\end{enumerate}
+\end{enumerate}
+
+\section*{Bài V}
+Vì $x,y\ge0$ nên $P=x+2y\ge0$. Ta có
+\[
+P^2=x^2+4xy+4y^2=(x^2+y^2)+(4xy+3y^2)\ge4,
+\]
+do $x^2+y^2=4$ và $4xy+3y^2\ge0$. Suy ra $P\ge2$. Dấu bằng đạt được tại $(x,y)=(2,0)$, thỏa điều kiện. Vậy giá trị nhỏ nhất của $P$ là $2$.
+\end{document}

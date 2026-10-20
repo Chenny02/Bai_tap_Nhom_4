@@ -1,0 +1,149 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2cm,includeheadfoot]{geometry}
+\usepackage{enumitem}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.55em,topsep=0.3em}
+\newcommand{\diem}[1]{\textit{(#1 điểm)}}
+
+\begin{document}
+\begin{center}
+  {\large\bfseries SỞ GIÁO DỤC VÀ ĐÀO TẠO HÀ NỘI}\par
+  {\Large\bfseries KỲ THI TUYỂN SINH VÀO LỚP 10 THPT}\par
+  {\large\bfseries NĂM HỌC 2026--2027}\par
+  \vspace{0.35em}
+  {\large\bfseries ĐÁP ÁN VÀ LỜI GIẢI CHI TIẾT}\par
+  Môn thi: Toán \qquad Ngày thi: 31/5/2026
+\end{center}
+\textit{Đáp án cho phần trích Đại số và toán thực tế trong đề; tổng điểm các ý được giữ lại theo thang điểm gốc là 7,0 điểm.}
+
+\textbf{Câu I} \diem{1,5}
+\begin{enumerate}
+  \item Nhóm $[150;155)$ có tần số là số học sinh thuộc nhóm đó, do đó
+  \[
+    n_{[150;155)}=14.
+  \]
+  Tần số tương đối của nhóm là
+  \[
+    \frac{14}{50}=0{,}28=28\%.
+  \]
+  \textit{Kết luận: tần số bằng $14$, tần số tương đối bằng $28\%$.}
+
+  \item Không gian mẫu gồm 6 kết quả đồng khả năng là lấy được một trong các quả bóng ghi số $1,2,3,4,5,6$. Biến cố $A$ gồm 3 kết quả thuận lợi: lấy được bóng ghi số $2,4$ hoặc $6$. Vậy
+  \[
+    P(A)=\frac{3}{6}=\frac12.
+  \]
+\end{enumerate}
+
+\textbf{Câu II} \diem{1,5}\\
+Đặt điều kiện như đề bài: $x>0$, $x\ne9$.
+\begin{enumerate}
+  \item Thay $x=25$ vào $A$:
+  \[
+    A=\frac{\sqrt{25}-4}{\sqrt{25}}=\frac{5-4}{5}=\frac15.
+  \]
+
+  \item Đặt $t=\sqrt{x}$. Khi đó $t>0$, $t\ne3$, và $x-9=(t-3)(t+3)$. Quy đồng hai phân thức:
+  \begin{align*}
+    B&=\frac{4(t+3)+t^2-7t-12}{(t-3)(t+3)}\\
+     &=\frac{t^2-3t}{(t-3)(t+3)}
+      =\frac{t}{t+3}
+      =\frac{\sqrt{x}}{\sqrt{x}+3}.
+  \end{align*}
+
+  \item Theo biểu thức gốc $B$, kết quả phần (2) suy ra
+  \[
+    P=A\cdot B=\frac{\sqrt{x}-4}{\sqrt{x}}\cdot\frac{\sqrt{x}}{\sqrt{x}+3}
+      =\frac{\sqrt{x}-4}{\sqrt{x}+3}.
+  \]
+  Đặt $t=\sqrt{x}>0$, $t\ne3$. Khi đó $P=(t-4)/(t+3)=1-7/(t+3)$. Vì $t+3>3$, ta có $-\frac43<P<1$. Nếu $P$ nguyên thì $P\in\{-1,0\}$.
+  \begin{itemize}
+    \item $P=0\iff t=4\iff x=16$.
+    \item $P=-1\iff t+3=\frac72\iff t=\frac12\iff x=\frac14$.
+  \end{itemize}
+  Cả hai giá trị đều thỏa điều kiện. Vậy $x=16$ hoặc $x=\frac14$.
+\end{enumerate}
+
+\textbf{Câu III} \diem{2,5}
+\begin{enumerate}
+  \item Gọi $x$ (chiếc áo) là số áo theo kế hoạch tổ may trong mỗi ngày, với $x>0$. Trong 3 ngày đầu tổ may được $3x$ chiếc; trong 7 ngày tiếp theo tổ may được $7(x+5)$ chiếc. Theo đề bài,
+  \[
+    3x+7(x+5)=335
+    \iff 10x+35=335
+    \iff x=30.
+  \]
+  Vậy theo kế hoạch, mỗi ngày tổ may 30 chiếc áo.
+
+  \item Gọi $r$ và $c$ lần lượt là số bông hoa hồng và hoa cúc. Ta có hệ
+  \[
+    \begin{cases}
+      r+c=25,\\
+      8r+6c=180.
+    \end{cases}
+  \]
+  Từ $c=25-r$, thay vào phương trình tiền:
+  \[
+    8r+6(25-r)=180
+    \iff 2r=30
+    \iff r=15.
+  \]
+  Suy ra $c=25-15=10$. Vậy người đó mua 15 bông hoa hồng và 10 bông hoa cúc.
+
+  \item Theo hệ thức Viète cho $x^2-3x+1=0$,
+  \[
+    x_1+x_2=3,\qquad x_1x_2=1.
+  \]
+  Do $x_1x_2=1$, ta có $\dfrac1{x_1}=x_2$ và $\dfrac1{x_2}=x_1$. Vì thế
+  \begin{align*}
+    Q&=\frac{3x_2-1}{x_1}+\frac{3x_1}{x_2}-x_1\\
+     &=3x_2^2-x_2+3x_1^2-x_1\\
+     &=3\bigl((x_1+x_2)^2-2x_1x_2\bigr)-(x_1+x_2)\\
+     &=3(9-2)-3=18.
+  \end{align*}
+\end{enumerate}
+
+\textbf{Câu IV} \textit{(ý 1 của đề gốc; phần giữ lại: 1,0 điểm)}
+\begin{enumerate}
+  \item Xô có bán kính đáy $r=12\,\mathrm{cm}$, chiều cao $h=25\,\mathrm{cm}$.
+  \begin{enumerate}[label=\alph*)]
+    \item Diện tích xung quanh hình trụ là
+    \[
+      S_{\mathrm{xq}}=2\pi rh\approx2\cdot3{,}14\cdot12\cdot25=1884\,\mathrm{cm}^2.
+    \]
+    \item Thể tích của xô là
+    \[
+      V=\pi r^2h\approx3{,}14\cdot12^2\cdot25=11304\,\mathrm{cm}^3=11{,}304\,\mathrm{lít}.
+    \]
+    Mỗi lần chỉ múc lượng nước bằng $80\%$ thể tích xô, tức là
+    \[
+      0{,}8\cdot11{,}304=9{,}0432\,\mathrm{lít}.
+    \]
+    Sau 16 lần, lượng nước múc được là $16\cdot9{,}0432=144{,}6912$ lít, chưa đủ 150 lít; sau 17 lần là $17\cdot9{,}0432=153{,}7344$ lít, đủ đổ đầy bể. Vậy cần múc ít nhất 17 xô.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Câu V} \diem{0,5}\\
+Gọi $n$ là số công nhân và $d$ là số ngày thuê xưởng. Theo cách lập kế hoạch hoàn thành đúng 1000 sản phẩm,
+\[
+  5nd=1000\quad\Longleftrightarrow\quad nd=200,
+\]
+trong đó $n,d$ là các số nguyên dương. Tính theo triệu đồng, tổng chi phí là
+\[
+  C=3d+n=\frac{600}{n}+n.
+\]
+Các ước dương của 200 và chi phí tương ứng là
+\[
+\begin{array}{c|rrrrrrrrrrrr}
+ n&1&2&4&5&8&10&20&25&40&50&100&200\\ \hline
+ C&601&302&154&125&83&70&50&49&55&62&106&203
+\end{array}
+\]
+Do đó chi phí nhỏ nhất là 49 triệu đồng, đạt được khi $n=25$ và $d=8$. Vậy công ty nên điều động 25 công nhân và thuê kho xưởng trong 8 ngày.
+
+\begin{center}\textbf{HẾT}\end{center}
+\end{document}

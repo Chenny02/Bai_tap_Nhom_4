@@ -1,0 +1,109 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries ĐÁP ÁN ĐỀ THI TUYỂN SINH VÀO LỚP 10 THPT}\\
+{\bfseries Thành phố Hà Nội, năm học 2009--2010}\\
+{\itshape Phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+\begin{enumerate}[label=\alph*)]
+\item Với $x\ge0$, $x\ne4$, ta có
+\begin{align*}
+A&=\frac{x}{x-4}+\frac{1}{\sqrt{x}-2}+\frac{1}{\sqrt{x}+2}\\
+&=\frac{x+(\sqrt{x}+2)+(\sqrt{x}-2)}
+{(\sqrt{x}+2)(\sqrt{x}-2)}\\
+&=\frac{\sqrt{x}(\sqrt{x}+2)}
+{(\sqrt{x}+2)(\sqrt{x}-2)}
+=\frac{\sqrt{x}}{\sqrt{x}-2}.
+\end{align*}
+\item Với $x=25$,
+\[
+A=\frac5{5-2}=\frac53.
+\]
+\item
+\[
+\frac{\sqrt{x}}{\sqrt{x}-2}=-\frac13
+\Longleftrightarrow 3\sqrt{x}=-\sqrt{x}+2
+\Longleftrightarrow \sqrt{x}=\frac12
+\Longleftrightarrow x=\frac14.
+\]
+Giá trị này thỏa mãn điều kiện.
+\end{enumerate}
+
+\textbf{Câu 2.}
+
+Gọi số áo tổ II may trong một ngày là $x$ ($x\in\mathbb N^*$). Khi đó mỗi ngày tổ I may được $x+10$ chiếc áo. Theo đề bài,
+\[
+3(x+10)+5x=1310
+\Longleftrightarrow 8x=1280
+\Longleftrightarrow x=160.
+\]
+Vậy mỗi ngày tổ I may 170 chiếc áo và tổ II may 160 chiếc áo.
+
+\textbf{Câu 3.}
+\begin{enumerate}[label=\alph*)]
+\item Khi $m=1$, phương trình trở thành
+\[
+x^2-4x+3=0
+\Longleftrightarrow (x-1)(x-3)=0.
+\]
+Vậy $x=1$ hoặc $x=3$.
+
+\item Phương trình có hai nghiệm phân biệt khi
+\[
+\Delta'=(m+1)^2-(m^2+2)=2m-1>0
+\Longleftrightarrow m>\frac12.
+\]
+Theo định lý Viète,
+\[
+x_1+x_2=2(m+1),\qquad x_1x_2=m^2+2.
+\]
+Do đó
+\begin{align*}
+x_1^2+x_2^2=10
+&\Longleftrightarrow (x_1+x_2)^2-2x_1x_2=10\\
+&\Longleftrightarrow 4(m+1)^2-2(m^2+2)=10\\
+&\Longleftrightarrow m^2+4m-5=0\\
+&\Longleftrightarrow m=1\ \text{hoặc}\ m=-5.
+\end{align*}
+Đối chiếu điều kiện $m>\dfrac12$, ta được $\boxed{m=1}$.
+\end{enumerate}
+
+\textbf{Câu 5.}
+
+Ta có
+\[
+\sqrt{x^2+x+\frac14}=\left|x+\frac12\right|
+\]
+và vế phải bằng
+\[
+\frac12(2x+1)(x^2+1)=\left(x+\frac12\right)(x^2+1).
+\]
+Để phương trình có nghiệm, vế phải phải không âm. Vì $x^2+1>0$, suy ra
+$x\ge-\dfrac12$. Khi đó phương trình tương đương
+\begin{align*}
+\left(x-\frac12\right)\left(x+\frac12\right)+x+\frac12
+&=\left(x+\frac12\right)(x^2+1).
+\end{align*}
+Suy ra
+\begin{align*}
+\left(x+\frac12\right)^2
+&=\left(x+\frac12\right)(x^2+1)\\
+\Longleftrightarrow
+\left(x+\frac12\right)x^2&=0\\
+\Longleftrightarrow x&=-\frac12\quad\text{hoặc}\quad x=0.
+\end{align*}
+Cả hai giá trị đều thỏa mãn phương trình. Vậy
+\[
+\boxed{S=\left\{-\frac12,0\right\}}.
+\]
+\end{document}

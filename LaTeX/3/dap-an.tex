@@ -1,0 +1,106 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage[vietnamese]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=*,itemsep=0.6em}
+\setlength{\parindent}{0pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries ĐÁP ÁN VÀ LỜI GIẢI -- ĐỀ 3 (2024)}\\[2pt]
+{\large\bfseries PHẦN ĐẠI SỐ VÀ TOÁN ỨNG DỤNG}
+\end{center}
+
+\section*{Câu I. Biểu thức đại số}
+\begin{enumerate}
+\item Thay $x=16$ vào $A$:
+\[
+A=\frac{16}{\sqrt{16}-3}=\frac{16}{4-3}=16.
+\]
+\item Ta có $x-3\sqrt{x}=\sqrt{x}(\sqrt{x}-3)$. Quy đồng:
+\begin{align*}
+B&=\frac{2x-3}{\sqrt{x}(\sqrt{x}-3)}-\frac{\sqrt{x}-3}{\sqrt{x}(\sqrt{x}-3)}\\
+&=\frac{2x-\sqrt{x}}{\sqrt{x}(\sqrt{x}-3)}
+=\frac{\sqrt{x}(2\sqrt{x}-1)}{\sqrt{x}(\sqrt{x}-3)}
+=\frac{2\sqrt{x}-1}{\sqrt{x}-3}.
+\end{align*}
+\item Từ biểu thức rút gọn,
+\[
+A-B=\frac{x-(2\sqrt{x}-1)}{\sqrt{x}-3}
+=\frac{(\sqrt{x}-1)^2}{\sqrt{x}-3}.
+\]
+Tử số không âm và bằng 0 đúng khi $x=1$. Do đó phân thức âm khi tử dương và mẫu âm, tức $x\ne1$ và $0<x<9$. Điều kiện xác định đã loại $x=9$. Vậy
+\[
+\boxed{x\in(0,9),\ x\ne1}.
+\]
+\end{enumerate}
+
+\section*{Câu II. Bài toán thực tế}
+\begin{enumerate}
+\item Gọi số xe tải loại lớn là $n$ (xe), với $n\in\mathbb{N}^*$. Số xe loại nhỏ theo dự định là $n+2$. Mỗi xe loại lớn chở $15/n$ tấn, mỗi xe loại nhỏ chở $15/(n+2)$ tấn. Theo đề bài,
+\[
+\frac{15}{n}-\frac{15}{n+2}=2.
+\]
+Nhân hai vế với $n(n+2)>0$:
+\[
+15(n+2)-15n=2n(n+2)
+\Longleftrightarrow n^2+2n-15=0
+\Longleftrightarrow (n-3)(n+5)=0.
+\]
+Vì $n>0$ nên $n=3$. Đội sử dụng $\boxed{3}$ xe tải loại lớn.
+\item Diện tích xung quanh của bình hình trụ là
+\[
+S_{\text{xq}}=2\pi rh\approx2\cdot3{,}14\cdot4\cdot25=628\text{ cm}^2.
+\]
+\end{enumerate}
+
+\section*{Câu III. Hệ phương trình và hàm số}
+\begin{enumerate}
+\item Đặt $t=\sqrt{3x+1}$ (nên $t\ge0$). Hệ trở thành
+\[
+\begin{cases}
+t+2y=4,\\
+3t-y=5.
+\end{cases}
+\]
+Từ phương trình thứ hai, $y=3t-5$. Thay vào phương trình đầu:
+\[
+t+2(3t-5)=4\Longrightarrow 7t=14\Longrightarrow t=2,
+\]
+nên $y=1$. Vì $t^2=3x+1$, ta có $4=3x+1$, suy ra $x=1$. Nghiệm của hệ là $\boxed{(x,y)=(1,1)}$.
+\item Hoành độ giao điểm thỏa mãn
+\[
+x^2=(m-2)x+5\quad\Longleftrightarrow\quad x^2-(m-2)x-5=0.
+\]
+\begin{enumerate}
+\item Biệt thức của phương trình là
+\[
+\Delta=(m-2)^2+20>0
+\]
+với mọi $m$. Vì vậy phương trình luôn có hai nghiệm thực phân biệt, nên đường thẳng $(d)$ luôn cắt parabol $(P)$ tại hai điểm phân biệt.
+\item Theo Viète, $x_1x_2=-5$ và $x_1+x_2=m-2$. Điều kiện $x_1+5x_2=0$ cho $x_1=-5x_2$. Kết hợp tích hai nghiệm:
+\[
+-5x_2^2=-5\Longrightarrow x_2^2=1.
+\]
+Nếu $x_2=1$ thì $x_1=-5$, tổng hai nghiệm là $-4=m-2$, suy ra $m=-2$. Nếu $x_2=-1$ thì $x_1=5$, tổng hai nghiệm là $4=m-2$, suy ra $m=6$. Vậy $\boxed{m=-2\text{ hoặc }m=6}$.
+\end{enumerate}
+\end{enumerate}
+
+\section*{Câu V. Bài toán tối ưu}
+Đặt $s=x+y$. Từ điều kiện, $xy=3-s$, nên
+\[
+P=\frac3s-(3-s)=s+\frac3s-3.
+\]
+Theo bất đẳng thức $(x+y)^2\ge4xy$,
+\[
+s^2\ge4(3-s)\Longleftrightarrow (s+6)(s-2)\ge0.
+\]
+Vì $s=x+y>0$, suy ra $s\ge2$. Xét $f(s)=s+3/s-3$ với $s\ge2$. Nếu $s_2>s_1\ge2$ thì
+\[
+f(s_2)-f(s_1)=(s_2-s_1)\left(1-\frac3{s_1s_2}\right)>0,
+\]
+nên $f$ tăng trên miền này. Do đó $P$ nhỏ nhất khi $s=2$. Khi $x+y=2$, điều kiện cho $xy=1$; kết hợp $(x-y)^2=(x+y)^2-4xy=0$ suy ra $x=y=1$. Khi ấy $P=\frac12$. Vậy giá trị nhỏ nhất là $\boxed{\frac12}$, đạt tại $\boxed{x=y=1}$.
+\end{document}

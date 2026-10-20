@@ -1,0 +1,79 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{amsmath,amssymb}
+\usepackage[margin=2cm,includeheadfoot]{geometry}
+\usepackage{enumitem}
+\usepackage{array,tabularx}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlist[enumerate]{leftmargin=*,itemsep=0.45em,topsep=0.3em}
+\newcommand{\diem}[1]{\textit{(#1 điểm)}}
+
+\begin{document}
+\begin{center}
+  {\large\bfseries SỞ GIÁO DỤC VÀ ĐÀO TẠO HÀ NỘI}\par
+  {\Large\bfseries KỲ THI TUYỂN SINH VÀO LỚP 10 THPT}\par
+  {\large\bfseries NĂM HỌC 2026--2027}\par
+  \vspace{0.35em}
+  {\large\bfseries ĐỀ TOÁN -- PHẦN ĐẠI SỐ VÀ TOÁN THỰC TẾ}\par
+  Môn thi: Toán \qquad Ngày thi: 31/5/2026 \qquad Thời gian làm bài: 120 phút
+\end{center}
+\textit{Bản trích giữ các nội dung xác suất--thống kê, biểu thức đại số, toán thực tế và diện tích--thể tích; lược bỏ phần hình học chứng minh. Tổng điểm của các ý được giữ lại theo thang điểm đề gốc là 7,0 điểm.}
+
+\textbf{Câu I} \diem{1,5}
+\begin{enumerate}
+  \item Kết quả đo chiều cao của 50 học sinh lớp 6 (đơn vị: cm) được thống kê trong bảng tần số ghép nhóm sau:
+  \begin{center}
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{|c|c|c|c|c|c|}\hline
+      Chiều cao (cm) & $[140;145)$ & $[145;150)$ & $[150;155)$ & $[155;160)$ & $[160;165)$ \\ \hline
+      Số học sinh & 10 & 18 & 14 & 6 & 2 \\ \hline
+    \end{tabular}
+  \end{center}
+  Xác định tần số và tần số tương đối của nhóm $[150;155)$.
+
+  \item Một hộp đựng 6 quả bóng cùng loại, mỗi quả bóng ghi một trong các số $1,2,3,4,5,6$; hai quả bóng khác nhau được ghi hai số khác nhau. Lấy ngẫu nhiên một quả bóng trong hộp. Tính xác suất của biến cố $A$: ``Số ghi trên quả bóng lấy được là số chẵn''.
+\end{enumerate}
+
+\textbf{Câu II} \diem{1,5}\\
+Cho hai biểu thức
+\[
+ A=\frac{\sqrt{x}-4}{\sqrt{x}},\qquad
+ B=\frac{4}{\sqrt{x}-3}+\frac{x-7\sqrt{x}-12}{x-9},
+ \qquad x>0,\ x\ne 9.
+\]
+\begin{enumerate}
+  \item Tính giá trị của biểu thức $A$ khi $x=25$.
+  \item Chứng minh rằng $B=\dfrac{\sqrt{x}}{\sqrt{x}+3}$.
+  \item Tìm tất cả giá trị của $x$ để biểu thức $P=A\cdot B$ có giá trị là số nguyên.
+\end{enumerate}
+
+\textbf{Câu III} \diem{2,5}
+\begin{enumerate}
+  \item Một tổ sản xuất lập kế hoạch may áo với số lượng áo mỗi ngày may được là như nhau. Trong 3 ngày đầu, mỗi ngày tổ đã may theo đúng kế hoạch. Trong 7 ngày tiếp theo, nhờ cải tiến kĩ thuật nên mỗi ngày tổ đã may được nhiều hơn 5 chiếc áo so với kế hoạch. Vì vậy sau 10 ngày, tổ đã may được tổng số 335 chiếc áo. Hỏi theo kế hoạch, mỗi ngày tổ sản xuất may bao nhiêu chiếc áo?
+
+  \item Một người mua 25 bông hoa gồm hoa hồng và hoa cúc hết tổng số tiền là 180 nghìn đồng. Biết giá tiền mỗi bông hoa hồng là 8 nghìn đồng, giá tiền mỗi bông hoa cúc là 6 nghìn đồng. Hỏi người đó đã mua bao nhiêu bông hoa mỗi loại?
+
+  \item Biết phương trình bậc hai $x^2-3x+1=0$ có hai nghiệm phân biệt $x_1$ và $x_2$, tính giá trị của biểu thức
+  \[
+    Q=\frac{3x_2-1}{x_1}+\frac{3x_1}{x_2}-x_1.
+  \]
+\end{enumerate}
+
+\textbf{Câu IV} \textit{(phần giữ lại: 1,0 điểm; ý 1 của đề gốc)}
+\begin{enumerate}
+  \item Một xô đựng nước dạng hình trụ có chiều cao bằng $25\,\mathrm{cm}$ và bán kính đáy bằng $12\,\mathrm{cm}$. Lấy $\pi\approx 3{,}14$ và coi độ dày của xô đựng nước không đáng kể.
+  \begin{enumerate}[label=\alph*)]
+    \item Tính diện tích xung quanh của xô đựng nước đó.
+    \item Người ta dùng xô đựng nước trên để múc nước đổ vào một bể có thể tích $150$ lít. Mỗi lần người ta chỉ múc lượng nước bằng $80\%$ thể tích của xô. Lúc đầu bể không có nước, hỏi cần múc ít nhất bao nhiêu xô để đổ đầy bể? Biết $1\,\mathrm{lít}=1000\,\mathrm{cm}^3$.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Câu V} \diem{0,5}\\
+Một công ty dự định thuê một kho xưởng và điều động một số công nhân để hoàn thành đơn hàng 1000 sản phẩm. Chi phí thuê kho xưởng được tính theo ngày với giá 3 triệu đồng một ngày. Biết một ngày mỗi công nhân làm được 5 sản phẩm và công ty dự định thưởng mỗi công nhân 1 triệu đồng sau khi đơn hàng được hoàn thành. Công ty muốn tổng chi phí thuê kho xưởng và thưởng công nhân khi hoàn thành đơn hàng là nhỏ nhất. Hỏi công ty nên điều động bao nhiêu công nhân và thuê kho xưởng trong bao nhiêu ngày?
+
+\begin{center}\textbf{HẾT}\end{center}
+\end{document}

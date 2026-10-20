@@ -1,0 +1,85 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2012\\Phần Đại số\end{center}
+
+\textbf{Câu 16.}
+
+a) Thay $x=36$:
+\[
+A=\frac{\sqrt{36}+4}{\sqrt{36}+2}=\frac{6+4}{6+2}=\frac54.
+\]
+
+b) Đặt $t=\sqrt{x}$. Khi đó $t\ge0$, $t\ne4$, và $x=t^2$. Ta có
+\begin{align*}
+B&=\left(\frac{t}{t+4}+\frac4{t-4}\right):\frac{t^2+16}{t+2}\\
+&=\frac{t(t-4)+4(t+4)}{(t+4)(t-4)}\cdot\frac{t+2}{t^2+16}\\
+&=\frac{t^2+16}{(t+4)(t-4)}\cdot\frac{t+2}{t^2+16}\\
+&=\frac{t+2}{t^2-16}=\frac{\sqrt{x}+2}{x-16}.
+\end{align*}
+Điều kiện ban đầu đảm bảo các mẫu khác $0$.
+
+c) Từ hai kết quả trên:
+\[
+A-1=\frac{2}{\sqrt{x}+2},\qquad B(A-1)=\frac{2}{x-16}.
+\]
+Biểu thức này là số nguyên khi $x$ nguyên (ngoài điều kiện $x\ge0$, $x\ne16$) và
+\[
+\frac2{x-16}\in\mathbb Z
+\iff x-16\in\{-2,-1,1,2\}.
+\]
+Do đó $x\in\{14,15,17,18\}$.
+
+\textbf{Câu 17.} Gọi $x,y$ lần lượt là số giờ người thứ nhất và người thứ hai làm một mình xong việc. Khi đó $y-x=2$, $x>0$. Năng suất mỗi giờ của hai người lần lượt là $\dfrac1x$ và $\dfrac1y$. Vì cùng làm thì hoàn thành trong $\dfrac{12}{5}$ giờ:
+\[
+\frac{12}{5}\left(\frac1x+\frac1y\right)=1.
+\]
+Thay $y=x+2$:
+\[
+\frac{12}{5}\left(\frac1x+\frac1{x+2}\right)=1
+\iff 5x^2-14x-24=0
+\iff (x-4)(5x+6)=0.
+\]
+Vì $x>0$, suy ra $x=4$, nên $y=6$. Người thứ nhất cần $4$ giờ và người thứ hai cần $6$ giờ.
+
+\textbf{Câu 18.}
+
+a) Đặt $u=\dfrac1x$, $v=\dfrac1y$. Hệ trở thành
+\[
+\begin{cases}2u+v=2,\\6u-2v=1.\end{cases}
+\]
+Nhân phương trình đầu với $2$ rồi cộng phương trình sau được $10u=5$, vậy $u=\dfrac12$ và từ đó $v=1$. Suy ra $x=2$, $y=1$. Nghiệm là $(x;y)=(2;1)$.
+
+b) Biệt thức của phương trình theo $x$ là
+\[
+\Delta=(4m-1)^2-4(3m^2-2m)=4m^2+1>0
+\]
+với mọi $m$, nên phương trình luôn có hai nghiệm phân biệt. Theo Viète,
+\[
+x_1+x_2=4m-1,\qquad x_1x_2=3m^2-2m.
+\]
+Điều kiện đề bài tương đương
+\begin{align*}
+7=x_1^2+x_2^2&=(x_1+x_2)^2-2x_1x_2\\
+&=(4m-1)^2-2(3m^2-2m)\\
+&=10m^2-4m+1,
+\end{align*}
+nên $10m^2-4m-6=0$, hay $(m-1)(5m+3)=0$. Vậy $m=1$ hoặc $m=-\dfrac35$.
+
+\textbf{Câu 20.} Đặt $t=\dfrac{x}{y}$. Vì $x\ge2y$ và $y>0$ nên $t\ge2$. Khi đó
+\[
+M=\frac{x^2+y^2}{xy}=t+\frac1t.
+\]
+Ta có
+\[
+M-\frac52=\frac{2t^2-5t+2}{2t}
+=\frac{(t-2)(2t-1)}{2t}\ge0,
+\]
+do $t\ge2$. Vậy $M_{\min}=\dfrac52$, đạt được khi $t=2$, tức $x=2y$.
+\end{document}

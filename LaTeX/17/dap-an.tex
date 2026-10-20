@@ -1,0 +1,98 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries ĐÁP ÁN ĐỀ THI TUYỂN SINH VÀO LỚP 10 THPT}\\
+{\bfseries Thành phố Hà Nội, năm học 2010--2011}\\
+{\itshape Phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+\begin{enumerate}[label=\alph*)]
+\item Với $x\ge0$, $x\ne9$,
+\begin{align*}
+P&=\frac{\sqrt{x}}{\sqrt{x}+3}
++\frac{2\sqrt{x}}{\sqrt{x}-3}
+-\frac{3x+9}{(\sqrt{x}-3)(\sqrt{x}+3)}\\
+&=\frac{\sqrt{x}(\sqrt{x}-3)
++2\sqrt{x}(\sqrt{x}+3)-(3x+9)}
+{(\sqrt{x}-3)(\sqrt{x}+3)}\\
+&=\frac{3\sqrt{x}-9}{(\sqrt{x}-3)(\sqrt{x}+3)}
+=\frac{3}{\sqrt{x}+3}.
+\end{align*}
+
+\item
+\[
+\frac{3}{\sqrt{x}+3}=\frac13
+\Longleftrightarrow \sqrt{x}+3=9
+\Longleftrightarrow x=36.
+\]
+
+\item Vì $x\ge0$ nên $\sqrt{x}+3\ge3$. Do đó
+\[
+P=\frac3{\sqrt{x}+3}\le1.
+\]
+Dấu bằng xảy ra khi $x=0$. Vậy $\boxed{\max P=1}$.
+\end{enumerate}
+
+\textbf{Câu 2.}
+
+Gọi chiều rộng của mảnh đất là $x$ mét ($0<x<13$). Chiều dài là $x+7$ mét. Theo định lý Pythagore,
+\[
+x^2+(x+7)^2=13^2
+\Longleftrightarrow x^2+7x-60=0
+\Longleftrightarrow (x-5)(x+12)=0.
+\]
+Đối chiếu điều kiện, $x=5$. Vậy chiều rộng là 5 m và chiều dài là 12 m.
+
+\textbf{Câu 3.}
+\begin{enumerate}[label=\alph*)]
+\item Phương trình hoành độ giao điểm là
+\[
+-x^2=mx-1
+\Longleftrightarrow x^2+mx-1=0. \tag{1}
+\]
+Ta có $\Delta=m^2+4>0$ với mọi $m$, nên (1) luôn có hai nghiệm phân biệt. Vì vậy $(d)$ luôn cắt $(P)$ tại hai điểm phân biệt.
+
+\item Theo định lý Viète,
+\[
+x_1+x_2=-m,\qquad x_1x_2=-1.
+\]
+Do đó
+\begin{align*}
+x_1^2x_2+x_2^2x_1-x_1x_2=3
+&\Longleftrightarrow x_1x_2(x_1+x_2)-x_1x_2=3\\
+&\Longleftrightarrow (-1)(-m)-(-1)=3\\
+&\Longleftrightarrow m=2.
+\end{align*}
+Vậy $\boxed{m=2}$.
+\end{enumerate}
+
+\textbf{Câu 5.}
+
+Đặt $t=\sqrt{x^2+7}$, $t>0$. Vì $t^2=x^2+7$, phương trình trở thành
+\[
+t^2+4x=(x+4)t
+\Longleftrightarrow t^2-(x+4)t+4x=0
+\Longleftrightarrow (t-x)(t-4)=0.
+\]
+Nếu $t=x$ thì $\sqrt{x^2+7}=x$, điều này không thể xảy ra.
+
+Nếu $t=4$ thì
+\[
+\sqrt{x^2+7}=4
+\Longleftrightarrow x^2=9
+\Longleftrightarrow x=\pm3.
+\]
+Cả hai giá trị đều thỏa mãn. Vậy
+\[
+\boxed{S=\{-3,3\}}.
+\]
+\end{document}

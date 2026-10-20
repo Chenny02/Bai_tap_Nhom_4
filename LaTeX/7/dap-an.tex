@@ -1,0 +1,86 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2020 -- phần Đại số}
+\end{center}
+
+\textbf{Bài I.}
+\begin{enumerate}[label=\arabic*)]
+  \item Thay $x=4$ vào $A$, ta được
+  \[
+  A=\frac{\sqrt{4}+1}{\sqrt{4}+2}=\frac{3}{4}.
+  \]
+  \item Với $x\ge 0$, $x\ne1$, ta có
+  \begin{align*}
+  B&=\frac{3}{\sqrt{x}-1}-\frac{\sqrt{x}+5}{x-1}\\
+   &=\frac{3(\sqrt{x}+1)-(\sqrt{x}+5)}{(\sqrt{x}-1)(\sqrt{x}+1)}\\
+   &=\frac{2(\sqrt{x}-1)}{(\sqrt{x}-1)(\sqrt{x}+1)}
+    =\frac{2}{\sqrt{x}+1}.
+  \end{align*}
+  \item Từ câu 2,
+  \[
+  P=2\cdot\frac{\sqrt{x}+1}{\sqrt{x}+2}\cdot\frac{2}{\sqrt{x}+1}+\sqrt{x}
+   =\frac{4}{\sqrt{x}+2}+\sqrt{x}.
+  \]
+  Do đó
+  \[
+  P-2=\frac{4}{\sqrt{x}+2}+\sqrt{x}-2
+      =\frac{x}{\sqrt{x}+2}\ge 0.
+  \]
+  Dấu bằng xảy ra khi và chỉ khi $x=0$. Vậy giá trị nhỏ nhất của $P$ là $2$, đạt được tại $x=0$.
+\end{enumerate}
+
+\textbf{Bài II.}
+\begin{enumerate}[label=\arabic*)]
+  \item Gọi vận tốc đi bộ của An là $x$ km/h ($x>0$). Vận tốc đi xe đạp là $x+9$ km/h. Thời gian đi bộ và đi xe đạp lần lượt là $\dfrac{3}{x}$ giờ và $\dfrac{3}{x+9}$ giờ. Vì thời gian đi xe đạp ít hơn $45$ phút, tức $\dfrac{3}{4}$ giờ, nên
+  \[
+  \frac{3}{x}-\frac{3}{x+9}=\frac{3}{4}.
+  \]
+  Rút gọn phương trình:
+  \[
+  x^2+9x-36=0\Longleftrightarrow (x-3)(x+12)=0.
+  \]
+  Vì $x>0$, suy ra $x=3$. Vậy vận tốc đi bộ của An là $3$ km/h.
+  \item Diện tích mặt cầu bán kính $R=2$ cm là
+  \[
+  S=4\pi R^2=4\cdot3{,}14\cdot2^2=50{,}24\text{ cm}^2.
+  \]
+\end{enumerate}
+
+\textbf{Bài III.}
+\begin{enumerate}[label=\arabic*)]
+  \item Đặt $t=\dfrac{1}{y-1}$ (điều kiện $y\ne1$). Hệ trở thành
+  \[
+  \begin{cases}
+  2x+3t=5,\\
+  4x-t=3.
+  \end{cases}
+  \]
+  Từ phương trình thứ hai, $t=4x-3$. Thay vào phương trình thứ nhất, ta được $14x=14$, nên $x=1$ và $t=1$. Do $\dfrac{1}{y-1}=1$, suy ra $y=2$. Hệ có nghiệm duy nhất $(x;y)=(1;2)$.
+  \item
+  \begin{enumerate}[label=\alph*)]
+    \item Trên trục $Oy$ có $x=0$. Thay vào $y=mx+4$, được $y=4$. Vậy $A(0;4)$.
+    \item Giao điểm của $(d)$ với trục $Ox$ có tung độ bằng $0$, nên $B\left(-\dfrac{4}{m};0\right)$. Tam giác $OAB$ vuông tại $O$. Để tam giác cân, hai cạnh góc vuông phải bằng nhau:
+    \[
+    OA=OB\Longleftrightarrow 4=\left|\frac{4}{m}\right|
+    \Longleftrightarrow |m|=1.
+    \]
+    Vì $m\ne0$, các giá trị cần tìm là $m=1$ hoặc $m=-1$.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Bài V.} Điều kiện xác định là $x\ge\dfrac{2}{3}$. Ta biến đổi phương trình:
+\begin{align*}
+\sqrt{x}+\sqrt{3x-2}=x^2+1
+&\Longleftrightarrow 2\sqrt{x}+2\sqrt{3x-2}=2x^2+2\\
+&\Longleftrightarrow 2(x-1)^2+(\sqrt{x}-1)^2+(\sqrt{3x-2}-1)^2=0.
+\end{align*}
+Vế trái là tổng các số không âm, nên tổng bằng $0$ khi và chỉ khi từng số hạng bằng $0$. Suy ra $x=1$, giá trị này thỏa điều kiện xác định. Vậy phương trình có nghiệm duy nhất $x=1$.
+\end{document}

@@ -1,0 +1,106 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2013\\Phần Đại số\end{center}
+
+\textbf{Câu 21.}
+
+a) Vì $64>0$, thay $x=64$ vào biểu thức:
+\[
+A=\frac{2+\sqrt{64}}{\sqrt{64}}=\frac{2+8}{8}=\frac54.
+\]
+
+b) Với $x>0$, ta có $x+\sqrt{x}=\sqrt{x}(\sqrt{x}+1)$. Quy đồng:
+\begin{align*}
+B&=\frac{\sqrt{x}-1}{\sqrt{x}}+\frac{2\sqrt{x}+1}{\sqrt{x}(\sqrt{x}+1)}\\
+&=\frac{(\sqrt{x}-1)(\sqrt{x}+1)+2\sqrt{x}+1}{\sqrt{x}(\sqrt{x}+1)}\\
+&=\frac{x-1+2\sqrt{x}+1}{\sqrt{x}(\sqrt{x}+1)}
+=\frac{\sqrt{x}(\sqrt{x}+2)}{\sqrt{x}(\sqrt{x}+1)}
+=\frac{\sqrt{x}+2}{\sqrt{x}+1}.
+\end{align*}
+
+c) Dùng kết quả trên và $x>0$:
+\begin{align*}
+\frac AB>\frac32
+&\iff \frac{2+\sqrt{x}}{\sqrt{x}}\cdot\frac{\sqrt{x}+1}{\sqrt{x}+2}>\frac32\\
+&\iff \frac{\sqrt{x}+1}{\sqrt{x}}>\frac32\\
+&\iff 2(\sqrt{x}+1)>3\sqrt{x}\\
+&\iff \sqrt{x}<2\\
+&\iff 0<x<4.
+\end{align*}
+Vậy $0<x<4$.
+
+\textbf{Câu 22.} Gọi vận tốc lúc đi là $x$ km/h, điều kiện $x>0$. Vận tốc lúc về là $x+9$ km/h. Thời gian đi và về lần lượt là $\dfrac{90}{x}$ giờ và $\dfrac{90}{x+9}$ giờ. Thời gian nghỉ là $\dfrac12$ giờ, nên
+\[
+\frac{90}{x}+\frac{90}{x+9}+\frac12=5.
+\]
+Nhân và rút gọn phương trình:
+\[
+180(x+9)+180x=9x(x+9)
+\iff x^2-31x-180=0
+\iff (x-36)(x+5)=0.
+\]
+Do $x>0$, nhận $x=36$ (loại $x=-5$). Vậy vận tốc lúc đi là $36$ km/h.
+
+\textbf{Câu 23.}
+
+1) Khai triển và rút gọn hệ:
+\[
+\begin{cases}
+5x+4y=1,\\
+3x-2y=5.
+\end{cases}
+\]
+Nhân phương trình thứ hai với $2$ rồi cộng với phương trình thứ nhất được $11x=11$, suy ra $x=1$. Thế vào $3x-2y=5$ được $y=-1$. Nghiệm là $(x;y)=(1;-1)$.
+
+2a) Với $m=1$, đường thẳng $(d)$ có phương trình $y=x+\dfrac32$. Hoành độ giao điểm thỏa
+\[
+\frac12x^2=x+\frac32\iff x^2-2x-3=0\iff x=-1\text{ hoặc }x=3.
+\]
+Thay vào $(P)$, ta được hai giao điểm $A\left(-1;\dfrac12\right)$ và $B\left(3;\dfrac92\right)$.
+
+2b) Phương trình hoành độ giao điểm là
+\[
+x^2-2mx+m^2-2m-2=0.
+\]
+Biệt thức thu gọn là $\Delta'=m^2-(m^2-2m-2)=2m+2$. Hai giao điểm phân biệt khi $m>-1$. Theo Viète,
+\[
+x_1+x_2=2m,\qquad x_1x_2=m^2-2m-2.
+\]
+Điều kiện $|x_1-x_2|=2$ tương đương
+\begin{align*}
+(x_1+x_2)^2-4x_1x_2&=4\\
+4m^2-4(m^2-2m-2)&=4\\
+2m+2&=1,
+\end{align*}
+nên $m=-\dfrac12$. Giá trị này thỏa $m>-1$, vậy $m=-\dfrac12$.
+
+\textbf{Câu 25.} Từ $(u-v)^2\ge0$ suy ra $\dfrac12(u^2+v^2)\ge uv$. Áp dụng lần lượt với $u=\dfrac1a,v=\dfrac1b$; $u=\dfrac1b,v=\dfrac1c$; $u=\dfrac1a,v=\dfrac1c$, ta có
+\[
+\frac12\left(\frac1{a^2}+\frac1{b^2}\right)\ge\frac1{ab},\quad
+\frac12\left(\frac1{b^2}+\frac1{c^2}\right)\ge\frac1{bc},\quad
+\frac12\left(\frac1{a^2}+\frac1{c^2}\right)\ge\frac1{ac}.
+\]
+Do $a,b,c>0$, cũng có
+\[
+\frac12\left(\frac1{a^2}+1\right)\ge\frac1a,\quad
+\frac12\left(\frac1{b^2}+1\right)\ge\frac1b,\quad
+\frac12\left(\frac1{c^2}+1\right)\ge\frac1c.
+\]
+Cộng sáu bất đẳng thức:
+\[
+\frac32+\frac32\left(\frac1{a^2}+\frac1{b^2}+\frac1{c^2}\right)
+\ge \frac1{ab}+\frac1{bc}+\frac1{ac}+\frac1a+\frac1b+\frac1c.
+\]
+Vế phải bằng $\dfrac{a+b+c+ab+bc+ca}{abc}=6$ theo giả thiết. Suy ra
+\[
+\frac32\left(\frac1{a^2}+\frac1{b^2}+\frac1{c^2}\right)\ge\frac92,
+\]
+hay $\dfrac1{a^2}+\dfrac1{b^2}+\dfrac1{c^2}\ge3$. Dấu bằng xảy ra tại $a=b=c=1$.
+\end{document}

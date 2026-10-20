@@ -1,0 +1,80 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb,enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Đáp án Toán vào lớp 10 Hà Nội năm 2018 -- phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+\begin{enumerate}[label=\arabic*)]
+  \item Với $x=9$, ta có
+  \[
+  A=\frac{\sqrt{9}+4}{\sqrt{9}-1}=\frac{7}{2}.
+  \]
+  \item Với $x\ge0$, $x\ne1$, ta có
+  \begin{align*}
+  B&=\frac{3\sqrt{x}+1}{x+2\sqrt{x}-3}-\frac{2}{\sqrt{x}+3}\\
+   &=\frac{3\sqrt{x}+1}{(\sqrt{x}-1)(\sqrt{x}+3)}-\frac{2}{\sqrt{x}+3}\\
+   &=\frac{3\sqrt{x}+1-2(\sqrt{x}-1)}{(\sqrt{x}-1)(\sqrt{x}+3)}\\
+   &=\frac{\sqrt{x}+3}{(\sqrt{x}-1)(\sqrt{x}+3)}
+    =\frac{1}{\sqrt{x}-1}.
+  \end{align*}
+  Vậy $B=\dfrac{1}{\sqrt{x}-1}$.
+  \item Từ kết quả trên,
+  \[
+  \frac{A}{B}=\frac{\sqrt{x}+4}{\sqrt{x}-1}:\frac{1}{\sqrt{x}-1}=\sqrt{x}+4.
+  \]
+  Do đó
+  \begin{align*}
+  \frac{A}{B}\ge\frac{x}{4}+5
+  &\Longleftrightarrow \sqrt{x}+4\ge\frac{x}{4}+5\\
+  &\Longleftrightarrow 4\sqrt{x}-x-4\ge0\\
+  &\Longleftrightarrow -(\sqrt{x}-2)^2\ge0\\
+  &\Longleftrightarrow x=4.
+  \end{align*}
+  Giá trị này thỏa điều kiện. Vậy $x=4$.
+\end{enumerate}
+
+\textbf{Câu 2.} Gọi chiều dài và chiều rộng lần lượt là $a,b$ mét, với $a\ge b>0$. Từ chu vi suy ra $a+b=14$. Theo định lý Pythagore,
+\[
+a^2+b^2=100.
+\]
+Mà $(a+b)^2=a^2+b^2+2ab$, nên $196=100+2ab$, suy ra $ab=48$. Hai số $a,b$ là nghiệm của
+\[
+t^2-14t+48=0\Longleftrightarrow (t-8)(t-6)=0.
+\]
+Vì $a\ge b$, ta được chiều dài $8$ m và chiều rộng $6$ m.
+
+\textbf{Câu 3.}
+\begin{enumerate}[label=\arabic*)]
+  \item Đặt $u=|y+2|$. Hệ trở thành
+  \[
+  \begin{cases}4x-u=3,\\x+2u=3.\end{cases}
+  \]
+  Từ phương trình đầu, $u=4x-3$. Thế vào phương trình sau: $x+2(4x-3)=3$, suy ra $x=1$ và $u=1$. Vậy $|y+2|=1$, nên $y=-1$ hoặc $y=-3$. Hệ có hai nghiệm $(1;-1)$ và $(1;-3)$.
+  \item Phương trình hoành độ giao điểm là
+  \[
+  x^2-(m+2)x-3=0.
+  \]
+  \begin{enumerate}[label=\alph*)]
+    \item Biệt thức $\Delta=(m+2)^2+12>0$ với mọi $m$, nên đường thẳng luôn cắt parabol tại hai điểm phân biệt.
+    \item Gọi hai hoành độ giao điểm là $x_1,x_2$. Theo Vi-ét, $x_1x_2=-3$. Vì $x_1,x_2$ nguyên nên cặp nghiệm, không kể thứ tự, chỉ có thể là $(-3,1)$ hoặc $(-1,3)$. Lại có $x_1+x_2=m+2$. Với tổng lần lượt là $-2$ và $2$, ta được $m=-4$ hoặc $m=0$.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Câu 5.} Điều kiện xác định là $0\le x\le1$. Vì $x\ge0$ và $1-x\ge0$, ta có
+\[
+\sqrt{1-x}+\sqrt{x}\ge\sqrt{1}=1.
+\]
+Mặt khác, $1+x\ge1$ nên $\sqrt{1+x}\ge1$. Do đó
+\[
+P=(\sqrt{1-x}+\sqrt{x})+(\sqrt{1+x}+\sqrt{x})\ge2.
+\]
+Dấu bằng xảy ra tại $x=0$. Vậy $\min P=2$ khi $x=0$.
+\end{document}

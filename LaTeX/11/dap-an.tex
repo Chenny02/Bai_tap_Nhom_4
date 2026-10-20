@@ -1,0 +1,119 @@
+% !TeX program = xelatex
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large\bfseries Đáp án tuyển sinh vào lớp 10 TP. Hà Nội năm học 2016--2017}\\
+{\large Phần Đại số}
+\end{center}
+
+\textbf{Câu 1.}
+\begin{enumerate}[label=\alph*)]
+\item Thay $x=25$:
+\[
+A=\frac{7}{\sqrt{25}+8}=\frac{7}{13}.
+\]
+\item Vì $x\ge0$ và $x\ne9$, ta có $\sqrt{x}-3\ne0$ và
+\begin{align*}
+B&=\frac{\sqrt{x}}{\sqrt{x}-3}+\frac{2\sqrt{x}-24}{(\sqrt{x}-3)(\sqrt{x}+3)}\\
+ &=\frac{\sqrt{x}(\sqrt{x}+3)+2\sqrt{x}-24}{(\sqrt{x}-3)(\sqrt{x}+3)}\\
+ &=\frac{x+5\sqrt{x}-24}{(\sqrt{x}-3)(\sqrt{x}+3)}
+ =\frac{(\sqrt{x}-3)(\sqrt{x}+8)}{(\sqrt{x}-3)(\sqrt{x}+3)}
+ =\frac{\sqrt{x}+8}{\sqrt{x}+3}.
+\end{align*}
+\item Từ câu b),
+\[
+P=AB=\frac{7}{\sqrt{x}+8}\cdot\frac{\sqrt{x}+8}{\sqrt{x}+3}
+ =\frac{7}{\sqrt{x}+3}.
+\]
+Do $\sqrt{x}+3\ge3$, nên $0<P\le\frac73$. Nếu $P$ nguyên thì $P=1$ hoặc $P=2$.
+\[
+P=1\Rightarrow \sqrt{x}+3=7\Rightarrow x=16;
+\qquad
+P=2\Rightarrow \sqrt{x}+3=\frac72\Rightarrow x=\frac14.
+\]
+Cả hai giá trị đều thỏa điều kiện $x\ge0$, $x\ne9$. Vậy $x=16$ hoặc $x=\frac14$.
+\end{enumerate}
+
+\textbf{Câu 2.}
+
+Gọi chiều dài mảnh vườn là $x$ (m), $x>0$. Khi đó chiều rộng là $\dfrac{720}{x}$ (m). Theo đề bài,
+\[
+(x+10)\left(\frac{720}{x}-6\right)=720.
+\]
+Nhân hai vế với $x$ và rút gọn:
+\[
+720x+7200-6x^2-60x=720x
+\Longleftrightarrow x^2+10x-1200=0
+\Longleftrightarrow (x-30)(x+40)=0.
+\]
+Vì $x>0$, suy ra $x=30$. Chiều rộng là $720:30=24$ (m). Vậy mảnh vườn dài $30$ m, rộng $24$ m.
+
+\textbf{Câu 3.}
+\begin{enumerate}[label=\alph*)]
+\item Điều kiện: $x\ne1$, $y\ne-2$. Đặt $u=\dfrac{x}{x-1}$ và $v=\dfrac{1}{y+2}$. Hệ đã cho trở thành
+\[
+\begin{cases}3u-2v=4,\\2u+v=5.\end{cases}
+\]
+Giải được $u=2$, $v=1$. Do đó
+\[
+\frac{x}{x-1}=2\Rightarrow x=2,
+\qquad
+\frac{1}{y+2}=1\Rightarrow y=-1.
+\]
+Nghiệm $(x;y)=(2;-1)$ thỏa điều kiện.
+\item
+\begin{enumerate}[label=(\alph*)]
+\item Hoành độ giao điểm thỏa
+\[
+x^2=3x+m^2-1\Longleftrightarrow x^2-3x-m^2+1=0.
+\]
+Biệt thức
+\[
+\Delta=9-4(-m^2+1)=4m^2+5>0
+\]
+với mọi $m$. Phương trình có hai nghiệm phân biệt, nên $(d)$ luôn cắt $(P)$ tại hai điểm phân biệt.
+\item Theo Viète, $x_1+x_2=3$ và $x_1x_2=1-m^2$. Điều kiện đề bài tương đương
+\begin{align*}
+(x_1+1)(x_2+1)=1
+&\Longleftrightarrow x_1x_2+x_1+x_2+1=1\\
+&\Longleftrightarrow (1-m^2)+3+1=1\\
+&\Longleftrightarrow m^2=4\\
+&\Longleftrightarrow m=\pm2.
+\end{align*}
+Vậy $m=2$ hoặc $m=-2$.
+\end{enumerate}
+\end{enumerate}
+
+\textbf{Câu 5.}
+
+Điều kiện xác định: $x\ge-6$, $y\ge-6$. Từ giả thiết,
+\[
+x-\sqrt{x+6}=\sqrt{y+6}-y
+\Longleftrightarrow x+y=\sqrt{x+6}+\sqrt{y+6}.
+\]
+Đặt $S=x+y$. Vế phải không âm nên $S\ge0$. Bất đẳng thức $(\sqrt a+\sqrt b)^2\le2(a+b)$ với $a,b\ge0$ cho
+\[
+S^2\le2\bigl((x+6)+(y+6)\bigr)=2S+24,
+\]
+suy ra $-4\le S\le6$. Mặt khác, bình phương đẳng thức $S=\sqrt{x+6}+\sqrt{y+6}$ cho
+\[
+S^2=S+12+2\sqrt{(x+6)(y+6)},
+\]
+nên
+\[
+(S+3)(S-4)=S^2-S-12=2\sqrt{(x+6)(y+6)}\ge0.
+\]
+Kết hợp với $S\ge0$ suy ra $S\ge4$. Vậy $4\le P=S\le6$.
+
+Nếu $S=4$, đẳng thức trên buộc $(x+6)(y+6)=0$. Kết hợp $x+y=4$, ta được $(x,y)=(-6,10)$ hoặc $(10,-6)$; do đó giá trị nhỏ nhất là $4$.
+
+Nếu $S=6$, dấu bằng trong bất đẳng thức $(\sqrt a+\sqrt b)^2\le2(a+b)$ xảy ra khi $a=b$, tức $x+6=y+6$. Cùng với $x+y=6$, suy ra $x=y=3$; do đó giá trị lớn nhất là $6$.
+
+\end{document}
